@@ -1,6 +1,24 @@
 @echo off
 cls
 
+:: idinagdag na code para sa maliit na screen
+
+:: 👇👇👇 IDAGDAG MO ITONG MGA LINYA DITO SA TAAS 👇👇👇
+:: AYUSIN ANG LAKI NG BINTANA PARA HINDI GUMAWA NG BAGONG LINYA
+mode con cols=125 lines=45 >nul
+:: SIGURADUHIN TAMANG PAGBASA NG MGA SIMBOLO AT KULAY
+chcp 65001 >nul
+:: 👆👆👆 HANGGANG DITO LANG 👆👆👆
+
+:: ==================================================
+:: ✅ MGA PANGUNAHING UTOS - HUWAG BAGUHIN
+:: ==================================================
+set "GOBACK=\u001b[H"
+set "tagal=4"
+set /a simula=%time:~6,2% + (%time:~3,2% * 60) + (%time:~0,2% * 3600)
+
+:: ... at itutuloy na ang buong script mo katulad ng dati ...
+
 :: ==================================================
 :: ✅ MGA PANGUNAHING UTOS - HUWAG BAGUHIN
 :: ==================================================
