@@ -1,36 +1,14 @@
 @echo off
 cls
 
-:: idinagdag na code para sa maliit na screen
-
-:: 👇👇👇 IDAGDAG MO ITONG MGA LINYA DITO SA TAAS 👇👇👇
-:: AYUSIN ANG LAKI NG BINTANA PARA HINDI GUMAWA NG BAGONG LINYA
 mode con cols=125 lines=45 >nul
-:: SIGURADUHIN TAMANG PAGBASA NG MGA SIMBOLO AT KULAY
 chcp 65001 >nul
-:: 👆👆👆 HANGGANG DITO LANG 👆👆👆
+color 07
 
-:: ==================================================
-:: ✅ MGA PANGUNAHING UTOS - HUWAG BAGUHIN
-:: ==================================================
-set "GOBACK=\u001b[H"
-set "tagal=4"
-set /a simula=%time:~6,2% + (%time:~3,2% * 60) + (%time:~0,2% * 3600)
-
-:: ... at itutuloy na ang buong script mo katulad ng dati ...
-
-:: ==================================================
-:: ✅ MGA PANGUNAHING UTOS - HUWAG BAGUHIN
-:: ==================================================
-::for /f %%a in ('echo prompt $H ^| cmd') do set "BS=%%a" (HINDI PINAGANA)
 set "GOBACK=[H"
 set "tagal=4"
 set /a simula=%time:~6,2% + (%time:~3,2% * 60) + (%time:~0,2% * 3600)
 
-
-:: ==================================================
-:: 🔄 SIMULA NG WALANG TIGIL NA PAG-UULIT
-:: ==================================================
 
 :loop1
 
@@ -352,7 +330,7 @@ cls
 
 
 :LOOP_ANIMASYON
-:: ---------- FRAME 1 (SIMULA - KALIWA, MALINIS) -------
+:: ---------- FRAME 1 -------
 <nul set /p "=%GOBACK%"
 color 07
 echo.                                          
@@ -384,7 +362,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: ------------ FRAME 2 (MEDYO GUMALAW, WALANG BAKAS) ----
+:: ------------ FRAME 2 ----
 <nul set /p "=%GOBACK%"
 echo.                                     
 echo.                                             
@@ -416,7 +394,7 @@ echo.                  ........
 echo.                                                 
 ping -n 1 -w 80 >nul
 
-:: ---------------- FRAME 3 (DAGDAG GALAW, MALINIS) ----
+:: ---------------- FRAME 3 ----
 <nul set /p "=%GOBACK%"
 echo.                                               
 echo.                                                        
@@ -449,7 +427,7 @@ echo.                       ,ollloooc.
 echo.                                                      
 ping -n 1 -w 80 >nul
 
-:: -------------- FRAME 4 (LALO PAKANAN, WALANG NATITIRA) ---
+:: -------------- FRAME 4 ---
 <nul set /p "=%GOBACK%"
 echo.                                                            
 echo.                                                         
@@ -483,7 +461,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: ------------- FRAME 5 (SIMULA NG MATINDING GALAW PAKANAN - MALINIS) 
+:: ------------- FRAME 5 ----------- 
 <nul set /p "=%GOBACK%"
 echo.                                                                   
 echo.                                                                  
@@ -516,7 +494,7 @@ echo.                 'ooddx,
 echo.                                                                
 ping -n 1 -w 80 >nul
 
-:: ------------- FRAME 6 (PATULOY PAKANAN - WALANG BAKAS) ----
+:: ------------- FRAME 6 ----
 <nul set /p "=%GOBACK%"
 echo.                                                                
 echo.                                                              
@@ -549,7 +527,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------- FRAME 7 (LALO PAKANAN - MALINIS) -------
+:: -------------- FRAME 7 -------
 <nul set /p "=%GOBACK%"
 echo.                                                                 
 echo.                                                                         
@@ -581,7 +559,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: --------------- FRAME 8 (HALOS NASA KANAN NA - WALANG NATITIRA) ----
+:: --------------- FRAME 8  ----
 <nul set /p "=%GOBACK%"
 echo.                                                                            
 echo.                                                                            
@@ -614,7 +592,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: --------------- FRAME 9 (MALAPIT NA SA DULO - MALINIS) ------
+:: --------------- FRAME 9 ------
 <nul set /p "=%GOBACK%"
 echo.                                                                             
 echo.                                                                  
@@ -648,7 +626,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: ------------- FRAME 10 (NASA DULO NA, LALABAS NA - WALANG BAKAS) ---
+:: ------------- FRAME 10 ---
 <nul set /p "=%GOBACK%"
 echo.                                                                                    
 echo.                                                                                   
@@ -682,7 +660,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: --------------- FRAME 11 (HULING HAKBANG BAGO LUMABAS - MALINIS) ---------------
+:: --------------- FRAME 11  ---------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                       
 echo.                                                                                       
@@ -715,7 +693,7 @@ echo.                                            ;oddddx,
 echo.                                                                             
 ping -n 1 -w 80 >nul
 
-:: -------------------------- FRAME 12 (SIMULA - ORIHINAL NA POSE) ---------------
+:: -------------------------- FRAME 12 ---------------
 <nul set /p "=%GOBACK%"
 echo.                                                                             
 echo.                                                                            
@@ -748,7 +726,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 13 (POSE 1 - UMAALIS PAKANAN) ------------------
+:: -------------------------- FRAME 13 ------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -779,7 +757,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 14 (POSE 2 - TULOY ANG TAKBO) --------------------
+:: -------------------------- FRAME 14 --------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -812,7 +790,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 15 (POSE 3 - HAKBANG PAKANAN) ---------------------
+:: -------------------------- FRAME 15  ---------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -846,7 +824,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 16 (POSE 4 - LUMAYO PA) --------------------------
+:: -------------------------- FRAME 16 --------------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -880,7 +858,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 17 (POSE 5 - TUMATAKBO) --------------------------
+:: -------------------------- FRAME 17 --------------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -914,7 +892,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 18 (POSE 6 - MALAYO NA KONTI) --------------------------
+:: -------------------------- FRAME 18  --------------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -947,7 +925,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 19 (POSE 7 - HAKBANG ULIT) --------------------------
+:: -------------------------- FRAME 19  --------------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -979,7 +957,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 20 (POSE 8 - PAPUNTA SA DULU) --------------------------
+:: -------------------------- FRAME 20 --------------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -1012,7 +990,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 21 (POSE 9 - MALAPIT NA LABAS) --------------------------
+:: -------------------------- FRAME 21 --------------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -1046,7 +1024,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 22 (POSE 10 - HALOS LABAS NA) --------------------------
+:: -------------------------- FRAME 22 --------------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -1079,7 +1057,7 @@ echo.                                                                           
 echo.                                                                                               
 ping -n 1 -w 80 >nul
 
-:: -------------------------- FRAME 11 (HULING HAKBANG BAGO LUMABAS - MALINIS) --------------------------
+:: -------------------------- FRAME 23 --------------------------
 <nul set /p "=%GOBACK%"
 echo.                                                               
 echo.                                                              
@@ -1113,7 +1091,7 @@ echo.
 ping -n 1 -w 80 >nul
 cls
 
-:: ---------- FRAME 1 (SIMULA - KALIWA, MALINIS) -------
+:: ---------- FRAME 24 -------
 color 0E
 <nul set /p "=%GOBACK%"
 echo.                                          
@@ -1145,7 +1123,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: ------------ FRAME 2 (MEDYO GUMALAW, WALANG BAKAS) ----
+:: ------------ FRAME 25  ----
 <nul set /p "=%GOBACK%"
 echo.                                     
 echo.                                             
@@ -1177,7 +1155,7 @@ echo.                  ........
 echo.                                                 
 ping -n 1 -w 80 >nul
 
-:: ---------------- FRAME 3 (DAGDAG GALAW, MALINIS) ----
+:: ---------------- FRAME 26  ----
 <nul set /p "=%GOBACK%"
 echo.                                               
 echo.                                                        
@@ -1210,7 +1188,7 @@ echo.                       ,ollloooc.
 echo.                                                      
 ping -n 1 -w 80 >nul
 
-:: -------------- FRAME 4 (LALO PAKANAN, WALANG NATITIRA) ---
+:: -------------- FRAME 27 ---
 <nul set /p "=%GOBACK%"
 echo.                                                            
 echo.                                                         
@@ -1244,7 +1222,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: ------------- FRAME 5 (SIMULA NG MATINDING GALAW PAKANAN - MALINIS) 
+:: ------------- FRAME 28 ------------
 <nul set /p "=%GOBACK%"
 echo.                                                                   
 echo.                                                                  
@@ -1277,7 +1255,7 @@ echo.                 'ooddx,
 echo.                                                                
 ping -n 1 -w 80 >nul
 
-:: ------------- FRAME 6 (PATULOY PAKANAN - WALANG BAKAS) ----
+:: ------------- FRAME 29 ----
 <nul set /p "=%GOBACK%"
 echo.                                                                
 echo.                                                              
@@ -1310,7 +1288,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------- FRAME 7 (LALO PAKANAN - MALINIS) -------
+:: -------------- FRAME 30 -------
 <nul set /p "=%GOBACK%"
 echo.                                                                 
 echo.                                                                         
@@ -1342,7 +1320,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: --------------- FRAME 8 (HALOS NASA KANAN NA - WALANG NATITIRA) ----
+:: --------------- FRAME 31 ----
 <nul set /p "=%GOBACK%"
 echo.                                                                            
 echo.                                                                            
@@ -1375,7 +1353,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: --------------- FRAME 9 (MALAPIT NA SA DULO - MALINIS) ------
+:: --------------- FRAME 32 ------
 <nul set /p "=%GOBACK%"
 echo.                                                                             
 echo.                                                                  
@@ -1409,7 +1387,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: ------------- FRAME 10 (NASA DULO NA, LALABAS NA - WALANG BAKAS) ---
+:: ------------- FRAME 33 ---
 <nul set /p "=%GOBACK%"
 echo.                                                                                    
 echo.                                                                                   
@@ -1443,7 +1421,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: --------------- FRAME 11 (HULING HAKBANG BAGO LUMABAS - MALINIS) ---------------
+:: --------------- FRAME 34 ---------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                       
 echo.                                                                                       
@@ -1476,7 +1454,7 @@ echo.                                            ;oddddx,
 echo.                                                                             
 ping -n 1 -w 80 >nul
 
-:: -------------------------- FRAME 12 (SIMULA - ORIHINAL NA POSE) ---------------
+:: -------------------------- FRAME 35 ---------------
 <nul set /p "=%GOBACK%"
 echo.                                                                             
 echo.                                                                            
@@ -1509,7 +1487,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 13 (POSE 1 - UMAALIS PAKANAN) ------------------
+:: -------------------------- FRAME 36 ------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -1540,7 +1518,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 14 (POSE 2 - TULOY ANG TAKBO) --------------------
+:: -------------------------- FRAME 37 --------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -1573,7 +1551,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 15 (POSE 3 - HAKBANG PAKANAN) ---------------------
+:: -------------------------- FRAME 38 ---------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -1607,7 +1585,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 16 (POSE 4 - LUMAYO PA) --------------------------
+:: -------------------------- FRAME 39 --------------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -1641,7 +1619,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 17 (POSE 5 - TUMATAKBO) --------------------------
+:: -------------------------- FRAME 40 --------------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -1675,7 +1653,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 18 (POSE 6 - MALAYO NA KONTI) --------------------------
+:: -------------------------- FRAME 41 --------------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -1708,7 +1686,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 19 (POSE 7 - HAKBANG ULIT) --------------------------
+:: -------------------------- FRAME 42 --------------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -1740,7 +1718,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 20 (POSE 8 - PAPUNTA SA DULU) --------------------------
+:: -------------------------- FRAME 43 --------------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -1773,7 +1751,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 21 (POSE 9 - MALAPIT NA LABAS) --------------------------
+:: -------------------------- FRAME 44 --------------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -1807,7 +1785,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 22 (POSE 10 - HALOS LABAS NA) --------------------------
+:: -------------------------- FRAME 45 --------------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -1840,7 +1818,7 @@ echo.                                                                           
 echo.                                                                                               
 ping -n 1 -w 80 >nul
 
-:: -------------------------- FRAME 11 (HULING HAKBANG BAGO LUMABAS - MALINIS) --------------------------
+:: -------------------------- FRAME 46 --------------------------
 <nul set /p "=%GOBACK%"
 echo.                                                               
 echo.                                                              
@@ -1874,7 +1852,7 @@ echo.
 ping -n 1 -w 80 >nul
 cls
 
-:: ---------- FRAME 1 (SIMULA - KALIWA, MALINIS) -------
+:: ---------- FRAME 47 -------
 color 0A
 <nul set /p "=%GOBACK%"
 echo.                                          
@@ -1906,7 +1884,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: ------------ FRAME 2 (MEDYO GUMALAW, WALANG BAKAS) ----
+:: ------------ FRAME 48 ----
 <nul set /p "=%GOBACK%"
 echo.                                     
 echo.                                             
@@ -1938,7 +1916,7 @@ echo.                  ........
 echo.                                                 
 ping -n 1 -w 80 >nul
 
-:: ---------------- FRAME 3 (DAGDAG GALAW, MALINIS) ----
+:: ---------------- FRAME 49 ----
 <nul set /p "=%GOBACK%"
 echo.                                               
 echo.                                                        
@@ -1971,7 +1949,7 @@ echo.                       ,ollloooc.
 echo.                                                      
 ping -n 1 -w 80 >nul
 
-:: -------------- FRAME 4 (LALO PAKANAN, WALANG NATITIRA) ---
+:: -------------- FRAME 50 ---
 <nul set /p "=%GOBACK%"
 echo.                                                            
 echo.                                                         
@@ -2005,7 +1983,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: ------------- FRAME 5 (SIMULA NG MATINDING GALAW PAKANAN - MALINIS) 
+:: ------------- FRAME 51-----------
 <nul set /p "=%GOBACK%"
 echo.                                                                   
 echo.                                                                  
@@ -2038,7 +2016,7 @@ echo.                 'ooddx,
 echo.                                                                
 ping -n 1 -w 80 >nul
 
-:: ------------- FRAME 6 (PATULOY PAKANAN - WALANG BAKAS) ----
+:: ------------- FRAME 52 ----
 <nul set /p "=%GOBACK%"
 echo.                                                                
 echo.                                                              
@@ -2071,7 +2049,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------- FRAME 7 (LALO PAKANAN - MALINIS) -------
+:: -------------- FRAME 53 -------
 <nul set /p "=%GOBACK%"
 echo.                                                                 
 echo.                                                                         
@@ -2103,7 +2081,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: --------------- FRAME 8 (HALOS NASA KANAN NA - WALANG NATITIRA) ----
+:: --------------- FRAME 54 ----
 <nul set /p "=%GOBACK%"
 echo.                                                                            
 echo.                                                                            
@@ -2136,7 +2114,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: --------------- FRAME 9 (MALAPIT NA SA DULO - MALINIS) ------
+:: --------------- FRAME 55 ------
 <nul set /p "=%GOBACK%"
 echo.                                                                             
 echo.                                                                  
@@ -2170,7 +2148,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: ------------- FRAME 10 (NASA DULO NA, LALABAS NA - WALANG BAKAS) ---
+:: ------------- FRAME 56 ---
 <nul set /p "=%GOBACK%"
 echo.                                                                                    
 echo.                                                                                   
@@ -2204,7 +2182,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: --------------- FRAME 11 (HULING HAKBANG BAGO LUMABAS - MALINIS) ---------------
+:: --------------- FRAME 57 ---------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                       
 echo.                                                                                       
@@ -2237,7 +2215,7 @@ echo.                                            ;oddddx,
 echo.                                                                             
 ping -n 1 -w 80 >nul
 
-:: -------------------------- FRAME 12 (SIMULA - ORIHINAL NA POSE) ---------------
+:: -------------------------- FRAME 58 ---------------
 <nul set /p "=%GOBACK%"
 echo.                                                                             
 echo.                                                                            
@@ -2270,7 +2248,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 13 (POSE 1 - UMAALIS PAKANAN) ------------------
+:: -------------------------- FRAME 59 ------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -2301,7 +2279,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 14 (POSE 2 - TULOY ANG TAKBO) --------------------
+:: -------------------------- FRAME 60 --------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -2334,7 +2312,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 15 (POSE 3 - HAKBANG PAKANAN) ---------------------
+:: -------------------------- FRAME 61 ---------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -2368,7 +2346,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 16 (POSE 4 - LUMAYO PA) --------------------------
+:: -------------------------- FRAME 62 --------------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -2402,7 +2380,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 17 (POSE 5 - TUMATAKBO) --------------------------
+:: -------------------------- FRAME 63 --------------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -2436,7 +2414,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 18 (POSE 6 - MALAYO NA KONTI) --------------------------
+:: -------------------------- FRAME 64 --------------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -2469,7 +2447,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 19 (POSE 7 - HAKBANG ULIT) --------------------------
+:: -------------------------- FRAME 65 --------------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -2501,7 +2479,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 20 (POSE 8 - PAPUNTA SA DULU) --------------------------
+:: -------------------------- FRAME 66 --------------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -2534,7 +2512,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 21 (POSE 9 - MALAPIT NA LABAS) --------------------------
+:: -------------------------- FRAME 67 --------------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -2568,7 +2546,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 22 (POSE 10 - HALOS LABAS NA) --------------------------
+:: -------------------------- FRAME 68 --------------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -2601,7 +2579,7 @@ echo.                                                                           
 echo.                                                                                               
 ping -n 1 -w 80 >nul
 
-:: -------------------------- FRAME 11 (HULING HAKBANG BAGO LUMABAS - MALINIS) --------------------------
+:: -------------------------- FRAME 69 --------------------------
 <nul set /p "=%GOBACK%"
 echo.                                                               
 echo.                                                              
@@ -2635,7 +2613,7 @@ echo.
 ping -n 1 -w 80 >nul
 cls
 
-:: ---------- FRAME 1 (SIMULA - KALIWA, MALINIS) -------
+:: ---------- FRAME 70 -------
 color 06
 <nul set /p "=%GOBACK%"
 echo.                                          
@@ -2667,7 +2645,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: ------------ FRAME 2 (MEDYO GUMALAW, WALANG BAKAS) ----
+:: ------------ FRAME 71 ----
 <nul set /p "=%GOBACK%"
 echo.                                     
 echo.                                             
@@ -2699,7 +2677,7 @@ echo.                  ........
 echo.                                                 
 ping -n 1 -w 80 >nul
 
-:: ---------------- FRAME 3 (DAGDAG GALAW, MALINIS) ----
+:: ---------------- FRAME 72 ----
 <nul set /p "=%GOBACK%"
 echo.                                               
 echo.                                                        
@@ -2732,7 +2710,7 @@ echo.                       ,ollloooc.
 echo.                                                      
 ping -n 1 -w 80 >nul
 
-:: -------------- FRAME 4 (LALO PAKANAN, WALANG NATITIRA) ---
+:: -------------- FRAME 73 ---
 <nul set /p "=%GOBACK%"
 echo.                                                            
 echo.                                                         
@@ -2766,7 +2744,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: ------------- FRAME 5 (SIMULA NG MATINDING GALAW PAKANAN - MALINIS) 
+:: ------------- FRAME 74
 <nul set /p "=%GOBACK%"
 echo.                                                                   
 echo.                                                                  
@@ -2799,7 +2777,7 @@ echo.                 'ooddx,
 echo.                                                                
 ping -n 1 -w 80 >nul
 
-:: ------------- FRAME 6 (PATULOY PAKANAN - WALANG BAKAS) ----
+:: ------------- FRAME 75 ----
 <nul set /p "=%GOBACK%"
 echo.                                                                
 echo.                                                              
@@ -2832,7 +2810,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------- FRAME 7 (LALO PAKANAN - MALINIS) -------
+:: -------------- FRAME 76 -------
 <nul set /p "=%GOBACK%"
 echo.                                                                 
 echo.                                                                         
@@ -2864,7 +2842,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: --------------- FRAME 8 (HALOS NASA KANAN NA - WALANG NATITIRA) ----
+:: --------------- FRAME 77 ----
 <nul set /p "=%GOBACK%"
 echo.                                                                            
 echo.                                                                            
@@ -2897,7 +2875,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: --------------- FRAME 9 (MALAPIT NA SA DULO - MALINIS) ------
+:: --------------- FRAME 78------
 <nul set /p "=%GOBACK%"
 echo.                                                                             
 echo.                                                                  
@@ -2931,7 +2909,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: ------------- FRAME 10 (NASA DULO NA, LALABAS NA - WALANG BAKAS) ---
+:: ------------- FRAME 79 ---
 <nul set /p "=%GOBACK%"
 echo.                                                                                    
 echo.                                                                                   
@@ -2965,7 +2943,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: --------------- FRAME 11 (HULING HAKBANG BAGO LUMABAS - MALINIS) ---------------
+:: --------------- FRAME 80 ---------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                       
 echo.                                                                                       
@@ -2998,7 +2976,7 @@ echo.                                            ;oddddx,
 echo.                                                                             
 ping -n 1 -w 80 >nul
 
-:: -------------------------- FRAME 12 (SIMULA - ORIHINAL NA POSE) ---------------
+:: -------------------------- FRAME 81 ---------------
 <nul set /p "=%GOBACK%"
 echo.                                                                             
 echo.                                                                            
@@ -3031,7 +3009,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 13 (POSE 1 - UMAALIS PAKANAN) ------------------
+:: -------------------------- FRAME 82 ------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -3062,7 +3040,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 14 (POSE 2 - TULOY ANG TAKBO) --------------------
+:: -------------------------- FRAME 83 --------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -3095,7 +3073,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 15 (POSE 3 - HAKBANG PAKANAN) ---------------------
+:: -------------------------- FRAME 84 ---------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -3129,7 +3107,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 16 (POSE 4 - LUMAYO PA) --------------------------
+:: -------------------------- FRAME 85 --------------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -3163,7 +3141,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 17 (POSE 5 - TUMATAKBO) --------------------------
+:: -------------------------- FRAME 86 --------------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -3197,7 +3175,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 18 (POSE 6 - MALAYO NA KONTI) --------------------------
+:: -------------------------- FRAME 87 --------------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -3230,7 +3208,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 19 (POSE 7 - HAKBANG ULIT) --------------------------
+:: -------------------------- FRAME 88 --------------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -3262,7 +3240,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 20 (POSE 8 - PAPUNTA SA DULU) --------------------------
+:: -------------------------- FRAME 89 --------------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -3295,7 +3273,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 21 (POSE 9 - MALAPIT NA LABAS) --------------------------
+:: -------------------------- FRAME 90 --------------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -3329,7 +3307,7 @@ echo.
 ping -n 1 -w 80 >nul
 
 
-:: -------------------------- FRAME 22 (POSE 10 - HALOS LABAS NA) --------------------------
+:: -------------------------- FRAME 91 --------------------------
 <nul set /p "=%GOBACK%"
 echo.                                                                                               
 echo.                                                                                               
@@ -3362,7 +3340,7 @@ echo.                                                                           
 echo.                                                                                               
 ping -n 1 -w 80 >nul
 
-:: -------------------------- FRAME 11 (HULING HAKBANG BAGO LUMABAS - MALINIS) --------------------------
+:: -------------------------- FRAME 92 --------------------------
 <nul set /p "=%GOBACK%"
 echo.                                                               
 echo.                                                              
